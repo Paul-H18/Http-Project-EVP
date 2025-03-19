@@ -1,0 +1,16 @@
+{
+    "version": "1.0.0",
+    "tasks": [
+      {
+        "label": "Start",
+        "type": "shell",
+        "command": "npm start",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
+  

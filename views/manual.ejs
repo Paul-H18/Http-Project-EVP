@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laborübung HTTP</title>
+
+    <style>
+
+        html {
+            background-color: black;
+            color: white;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            font-weight: 200;
+            font-size: 38px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        h2 {
+            font-weight: 200;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        h3 {
+            font-weight: 200;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            align-items: center;
+
+        }
+
+        .text {
+            font-size: 20px;
+            max-width: 650px;
+            text-align: justify;
+            line-height: 30px;
+        }
+
+        .solution {
+            color: #FF0000;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Wilkommen, <%= name %>!</h1>
+
+    <div class="wrapper">
+
+        <h2>Situation</h2>
+
+        <div class="text">
+            In einer Welt, in der Informationen die wertvollste Währung sind, hat ein berüchtigter Hacker namens "Shadow" eine geheime Datei gestohlen, die kritische Daten enthält. Diese Datei ist verschlüsselt und der Schlüssel, um sie zu entschlüsseln, ist ein geheimes Passwort. Shadow hat das Passwort in einem komplexen Netzwerk aus verschiedenen Servern versteckt, das nur durch eine Reihe von HTTP-Anfragen aufgedeckt werden kann. <br> <br>
+            Du bist Teil eines Elite-Teams von Cyberdetektiven, das beauftragt wurde, Shadow zu finden und den geheimen Code zu entschlüsseln, bevor er in die falschen Hände gerät. Eure Mission ist es, durch geschickte HTTP-Anfragen die versteckten Hinweise zu sammeln, die euch Schritt für Schritt näher an das Passwort bringen. <br> <br>
+            Jeder Hinweis führt euch zu einem neuen Server, einem neuen Rätsel oder einer neuen Herausforderung. Mit jedem gelösten Rätsel kommt ihr dem Ziel näher, aber die Zeit drängt. Schafft ihr es, den Code rechtzeitig zu entschlüsseln und die Welt vor einem Informationsdesaster zu bewahren? <br> <br>
+        </div>
+
+        <h2>Aufgabe</h2>
+
+        <div class="text">
+            Im nachfolgenden wirst du einige HTTP-Requests machen müssen um das geheime Passwort von "Shadow" zu knacken! <br> <br> 
+
+            <h3>Spielregeln:</h3>
+
+            <ol>
+                <li>Du beginnst mit einem Request an diese Adresse: FÜLLEN</li>
+                <li>Du erhälst immer Informationen um den nächsten HTTP Request bearbeiten zu können.</li>
+                <li>
+                    Um deine Lösung zu prüfen machst du einen GET-Request an die folgende Adresse:
+                    <span class="solution">
+                        '/solution?password=[DEINE_LÖSUNG]'
+                    </span>
+                </li>
+            </ol>
+        </div>
+
+            
+</div>
+
+
+</body>
+</html>
